@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>羚羚蔬食餐廳</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+        crossorigin="anonymous">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Microsoft JhengHei", "Segoe UI", "Roboto";
+        }
+
+        .btn {
+            border-width: 2px;
+        }
+
+        .header-carousel-item {
+            height: 450px;
+        }
+
+        .bg-cover {
+            background-size: cover;
+            background-position: center center;
+        }
+
+
+        .carousel-caption {
+            background-color: rgba(0, 0, 0, .3);
+        }
+
+        .bg-vegan {
+            background-color: #006030;
+        }
+
+        @media (min-width: 768px) {
+            .text-md-white {
+                color: #000;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg-secondary py-2">
+        <div class="container text-right">
+            <a href="#" class="text-white mr-2">
+                <i class="fab fa-twitter-square"></i>
+            </a>
+            <a href="#" class="text-white">
+                <i class="fab fa-facebook-square"></i>
+            </a>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="fas fa-leaf"></i> 羚羚蔬食餐廳</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active ">
+                        <a class="nav-link" href="index.html"> 首頁
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="web-vegan-meun.html" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            套餐系列
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="web-vegan-meun.html" target="blank">全素</a>
+                            <a class="dropdown-item" href="web-vegan-meun.html" target="blank">蛋奶素</a>
+                            <a class="dropdown-item" href="web-vegan-meun.html" target="blank">植物五辛素</a>
+                        </div>
+                    </li>
+                </ul>
+                <div class="my-2">
+                    <a href="# " class="btn btn-outline-success btn-sm " data-toggle="modal " data-target="#loginModal ">登入</a>
+                    <a href="# " class="btn btn-success btn-sm ml-2 " role="button " aria-pressed="true " data-toggle="modal " data-target="#registerModal ">註冊</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!--carousel -->
+    <header>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner ">
+                <div class="carousel-item bg-cover header-carousel-item active " style="background-image: url(https://images.unsplash.com/photo-1496412705862-e0088f16f791?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=8f0dc7cd3103e3049d4429dee7c4580e&auto=format&fit=crop&w=1350&q=80); ">
+                    <div class="carousel-caption d-none d-md-block ">
+                        <h3>蔬食好心情</h3>
+                        <p>料好實在的自然美食，小農合作最新鮮</p>
+                    </div>
+                </div>
+                <div class="carousel-item bg-cover header-carousel-item " style="background-image: url(https://images.unsplash.com/photo-1511999274094-689a928a70ca?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=2040bde2441d0bb214d750d2662bd548&auto=format&fit=crop&w=1350&q=80); ">
+                    <div class="carousel-caption d-none d-md-block ">
+                        <h3>蔬食好心情</h3>
+                        <p>料好實在的自然美食，小農合作最新鮮</p>
+                    </div>
+                </div>
+                <div class="carousel-item bg-cover header-carousel-item " style="background-image: url(https://images.unsplash.com/photo-1449831438585-6f419654d73e?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6c15e364face49633aa437ebb7bb886c&auto=format&fit=crop&w=1350&q=80); ">
+                    <div class="carousel-caption d-none d-md-block ">
+                        <h3>蔬食好心情</h3>
+                        <p>料好實在的自然美食，小農合作最新鮮</p>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev " href="#carouselExampleIndicators " role="button " data-slide="prev ">
+                <span class="carousel-control-prev-icon " aria-hidden="true "></span>
+                <span class="sr-only ">Previous</span>
+            </a>
+            <a class="carousel-control-next " href="#carouselExampleIndicators " role="button " data-slide="next ">
+                <span class="carousel-control-next-icon " aria-hidden="true "></span>
+                <span class="sr-only ">Next</span>
+            </a>
+        </div>
+    </header>
+    <!--content-->
+    <section class="bg-vegan py-5 ">
+        <div class="container ">
+            <div class="row text-light ">
+                <div class="col-md-4 py-3 ">
+                    <div>
+                        <i class="fas fa-coffee fa-2x "></i>
+                    </div>
+                    <h3>來一杯好茶</h3>
+                    <p>來自溪頭天然有機栽種，用心做的好茶，要讓喝茶的人，以「方便」、「自在」、「享受」的方式來養成喝茶習慣，使茶的文化更能普及大眾。</p>
+                </div>
+                <div class="col-md-4 py-3 ">
+                    <div>
+                        <i class="fas fa-lemon fa-2x "></i>
+                        </i>
+                    </div>
+                    <h3>自然蔬食饗宴</h3>
+                    <p>以國際料理為舞台、本地食材為主角，餐廳內匯集豐富蔬果及自然食材，提倡蔬食機能餐飲，用好滋味照顧每位顧客及這塊土地。菜色研發的理念，都從發揮當令食材出發，選擇豐富五感的料理方式，讓每道菜色皆是餐檯上最美麗的飾品，飽足顧客的身、心、靈</p>
+                </div>
+                <div class="col-md-4 py-3 ">
+                    <div>
+                        <i class="fas fa-hand-holding-heart fa-2x "></i>
+                        </i>
+                    </div>
+                    <h3>小農自產自銷</h3>
+                    <p>歷久米心是個平凡的小農家，來自蘭陽平原，三代務農，採無毒自然農法野放方式栽種的台灣在地好米，收割時雜草和稻穀一樣多，加上一年一度，從育苗稻米種子收割，不假他人一貫作業，不混米，單一品種，單一農戶生產！</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container-fluid py-5 text-white bg-light position-relative ">
+        <div class="row">
+            <div class="col-md-5 bg-cover" style="position:absolute; top: 0; bottom: 0; background-image: url(https://images.unsplash.com/photo-1493808997710-b9681bc18443?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c1640dc35ff107fdc75c228dc6fe997e&auto=format&fit=crop&w=634&q=80); ">
+            </div>
+        </div>
+        <div class="container">
+            <div class="row justify-content-end text-md-white ">
+                <div class="col-md-7 ">
+                    <h3>羚羚蔬食理念</h3>
+                    <p>一貫堅持自然、健康、美味、創意、精緻五大訴求，運用天然蔬果、高纖穀麥、新鮮菇菌與高級食材，力求少油、低鹽，保持天然原味與營養，結合中、日料理與法、義烹調的精髓，設計出獨一無二的素膳佳餚，特別強調美味、創意與精緻。以新鮮青蔬鮮果做主軸，搭配適當的豆製品，採用蒸、燙、燉、煮等健康烹調方法，呈現蔬果的自然風貌，擺脫傳統素食重油偏鹹的刻板印象。</p>
+                    <a href="# " class="btn btn-outline-success ">查看更多</a>
+                    <div class="row mt-3 ">
+                        <div class="col-md-6 mt-2 ">
+                            <h5>菜色方面</h5>
+                            <p>嚴選天然蔬果、高纖穀麥、新鮮菇菌與高級食材，力求少油、低鹽，保持天然原味與營養，讓您吃得健康。</p>
+                        </div>
+                        <div class="col-md-6 mt-2 ">
+                            <h5>口味方面</h5>
+                            <p>結合中、日料理與法、義烹調的精髓，設計出獨一無二的素膳佳餚，特別強調美味、創意與精緻。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class=" py-5 ">
+        <div class="container ">
+            <div class="row ">
+                <div class="col-md-6 ">
+                    <div>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14560.912497678817!2d120.70240044874294!3d24.163731050389586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346917d925aa1e35%3A0x9e4a6cf1bfd18c34!2z6Ie65Lit5biC56uL5ZyW5pu46aSo5YyX5Y2A5YiG6aSo!5e0!3m2!1szh-TW!2stw!4v1523694035834 "
+                            width="100% " height="450 " frameborder="0 " style="border:0 " allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="col-md-6 ">
+                    <form action=" " class="needs-validation novalidate ">
+                        <div class="form-group ">
+                            <label for="username ">姓名</label>
+                            <input type="text " class="form-control " id="username " placeholder="請輸入姓名 ">
+                        </div>
+                        <div class="form-group ">
+                            <label for="tel ">電話</label>
+                            <input type="number " class="form-control " id="tel " placeholder="請輸入電話 ">
+                        </div>
+                        <div class="form-group ">
+                            <label for="number ">訂位數</label>
+                            <input type="number " class="form-control " id="number " placeholder="請輸入人數 ">
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                            <label class="custom-control-label" for="customRadio1">全素</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                            <label class="custom-control-label" for="customRadio2">蛋奶素</label>
+                        </div>
+                        <div class="text-right">
+                            <button type="button" class="btn btn-secondary">取消</button>
+                            <button type="submit" class="btn btn-success">送出</button>
+                        </div>
+                    </form>
+                    <script>
+                        // Example starter JavaScript for disabling form submissions if there are invalid fields
+                        (function () {
+                            'use strict';
+                            window.addEventListener('load', function () {
+                                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                                var forms = document.getElementsByClassName('needs-validation');
+                                // Loop over them and prevent submission
+                                var validation = Array.prototype.filter.call(forms, function (form) {
+                                    form.addEventListener('submit', function (event) {
+                                        if (form.checkValidity() === false) {
+                                            event.preventDefault();
+                                            event.stopPropagation();
+                                        }
+                                        form.classList.add('was-validated');
+                                    }, false);
+                                });
+                            }, false);
+                        })();
+                    </script>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container-fluid ">
+        <div class="row ">
+            <div class="col-md-6 bg-cover text-white p-5 " style="background-image: url(https://images.pexels.com/photos/162830/tomatoes-tomato-harvest-healthy-food-162830.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260); ">
+                <div class="row ">
+                    <div class="col-md-9 ">
+                        <small>小農推薦</small>
+                        <h3>彰化 / 吳阿明 / 小蕃茄</h3>
+                        <p>評鑑為農民種植優質蔬果，番茄甜度約在11至12度、皮薄色優，關鍵在落實田間管理。為了讓大家吃到最新鮮最甜美之果實，堅持不使用農藥及增甜劑，保持小蕃茄原有的風味，就是要讓大家吃的安心、吃出健康！</p>
+                        <a href="# " class="btn btn-outline-success ">加入我們</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 bg-cover text-white p-5 " style="background-image: url(https://images.pexels.com/photos/39479/fresh-peppers-farmers-market-open-air-green-39479.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260); ">
+                <div class="row ">
+                    <div class="col-md-9 ">
+                        <small>小農推薦</small>
+                        <h3>苗栗 / 黃小樂 / 青椒</h3>
+                        <p>青椒營養豐富，是群眾一年四季所喜歡的蔬菜之一。為使城鄉居民在淡季吃到新鮮的青椒，近幾年本地區進行春大棚青椒秋延後栽培，即通過剪枝和定向田間管理達到一次春播種、育苗和定植栽培出現兩次產椒高峰。第一次出現在早春；第二次出現在晚秋。</p>
+                        <a href="# " class="btn btn-outline-success ">加入我們</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="py-5 px-3" style="background-color: rgba(85, 139, 65, 1)">
+        <div class="container text-light">
+            <div class="row ">
+                <div class="col-md-4 py-2 ">
+                    <h5>
+                        <i class="fas fa-leaf "></i>羚羚蔬食餐廳</h5>
+                    <ul class="list-unstyled ">
+                        <li>住址：台中市北區健行路359號</li>
+                        <li>電話：04-123456</li>
+                        <li>營業時間：週一至週五9:30-17:00</li>
+                    </ul>
+                </div>
+                <div class="col-md-4 py-2 ">
+                    <h5>
+                        <i class="fab fa-pagelines "></i>蔬食環保基金會</h5>
+                    <ul class="list-unstyled ">
+                        <li>住址：台中市北區健行路359號</li>
+                        <li>電話：04-123456</li>
+                        <li>營業時間：週一至週五9:30-17:00</li>
+                    </ul>
+                </div>
+                <div class="col-md-4 py-2 ">
+                    <h5>
+                        <i class="fab fa-leanpub "></i>蔬食環保地圖</h5>
+                    <ul class="list-unstyled ">
+                        <li>住址：台中市北區健行路359號</li>
+                        <li>電話：04-123456</li>
+                        <li>營業時間：週一至週五9:30-17:00</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Modal -->
+    <div class="modal fade " id="loginModal " tabindex="-1 " role="dialog " aria-labelledby="exampleModalLabel " aria-hidden="true ">
+        <div class="modal-dialog " role="document ">
+            <div class="modal-content ">
+                <div class="modal-header bg-secondary ">
+                    <h5 class="modal-title " id="exampleModalLabel ">登入服務</h5>
+                    <button type="button " class="close " data-dismiss="modal " aria-label="Close ">
+                        <span aria-hidden="true ">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body ">
+                    <div class="form-group ">
+                        <label for="email ">E-mail</label>
+                        <input type="email " class="form-control " id="email " placeholder="Enter Email ">
+                        <small id="emailHelp " class="form-text text-muted ">我們絕不會隨意把你的Email給予第三者</small>
+                    </div>
+                    <div class="form-group ">
+                        <label for="number ">密碼</label>
+                        <input type="number " class="form-control " id="number " placeholder="PassWord ">
+                    </div>
+                    <div class="form-check ">
+                        <input type="checkbox " class="form-check-input " id="exampleCheck1 ">
+                        <label class="form-check-label " for="exampleCheck1 ">記住帳號</label>
+                    </div>
+                </div>
+                <div class="modal-footer ">
+                    <a href="# " class="mr-auto " data-dismiss="modal " data-toggle="modal " data-target="#registerModal ">切換到註冊</a>
+                    <div class=" ">
+                        <button type="button " class="btn btn-secondary " data-dismiss="modal ">取消</button>
+                        <button type="button " class="btn btn-primary ">登入</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade bd-example-modal-lg " id="registerModal " tabindex="-1 " role="dialog " aria-labelledby="exampleModalLabel "
+        aria-hidden="true ">
+        <div class="modal-dialog modal-lg " role="document ">
+            <div class="modal-content ">
+                <div class="modal-header bg-success ">
+                    <h5 class="modal-title " id="exampleModalLabel ">註冊服務</h5>
+                    <button type="button " class="close " data-dismiss="modal " aria-label="Close ">
+                        <span aria-hidden="true ">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body ">
+                    <div class="container-fluid ">
+                        <div class="row ">
+                            <div class="col-md-6 ">
+                                <h5>會員專屬優惠：</h5>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste velit atque perspiciatis sint
+                                    dolores, alias corporis ut consequuntur repellat est illo, dolorem illum molestias odit
+                                    consectetur nobis fugit unde quis!</p>
+                            </div>
+                            <div class="col-md-6 ">
+                                <div class="form-group ">
+                                    <label for="exampleInputEmail1 ">Email:</label>
+                                    <input type="email " class="form-control " id="exampleInputEmail1 " aria-describedby="emailHelp " placeholder="Enter email ">
+                                    <small id="emailHelp " class="form-text text-muted ">We'll never share your email with anyone else.</small>
+                                </div>
+                                <div class="form-group ">
+                                    <label for="exampleInputPassword1 ">密碼：</label>
+                                    <input type="password " class="form-control " id="exampleInputPassword1 " placeholder="Password ">
+                                </div>
+                                <div class="form-group ">
+                                    <label for="exampleInputPassword1 ">密碼確認：</label>
+                                    <input type="password " class="form-control " id="exampleInputPassword1 " placeholder="Password ">
+                                </div>
+                                <div class="form-check ">
+                                    <input type="checkbox " class="form-check-input " id="exampleCheck1 ">
+                                    <label class="form-check-label " for="exampleCheck1 ">同意條款</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer ">
+                    <a href="# " class="mr-auto " data-dismiss="modal " data-toggle="modal " data-target="#loginModal ">切換到登入</a>
+                    <div class=" ">
+                        <button type="button " class="btn btn-secondary " data-dismiss="modal ">取消</button>
+                        <button type="button " class="btn btn-primary ">註冊</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo "
+        crossorigin="anonymous "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js " integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ "
+        crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js " integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm "
+        crossorigin="anonymous "></script>
+</body>
+
+</html>

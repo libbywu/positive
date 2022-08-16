@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>2022 libby</title>
+    <meta name="author" content="libby">
+    <meta name="keywords" content="libby">
+    <meta name="description" content="libby">
+    <meta itemprop="image" content="images/mylogo.svg">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="plugins/swiper/swiper.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="css/books.css">
+
+</head>
+<style>
+      .swiper {
+        width: 100%;
+        height: 500px;
+      }
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+</style>
+<body>
+      <nav id="main-nav">
+        <div class="logo">
+          <a href="index.html"><img src="images/mylogo.svg" alt="回首頁"</a>
+        </div>
+
+        <div class="responsive">
+            <div class="hamburger_menu"></div>
+        </div>
+        <ul class="nav-menu list-unstyled">
+          <li><a href="index.html" class="smoothScroll">關於采羚</a></li>
+          <li><a href="information.html" class="smoothScroll">資訊架構</a></li>
+          <li><a href="signposts.html" class="smoothScroll">導覽路標</a></li>
+          <li><a href="pages.html" class="smoothScroll">頁面元素</a></li>
+          <li><a href="#" class="smoothScroll">清單設計</a></li>
+          <li><a href="#" class="smoothScroll">動作命令</a></li>
+        </ul>
+      </nav>
+      <!-- Swiper Carousel begin-->
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"></div>
+          <div class="swiper-slide"><img src="https://images.unsplash.com/39/lIZrwvbeRuuzqOoWJUEn_Photoaday_CSD%20(1%20of%201)-5.jpg?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"></div>
+          <div class="swiper-slide"><img src="https://images.unsplash.com/photo-1556761175-4b46a572b786?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80"></div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+      <!-- Swiper Carousel end-->
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <section>
+              <h2 class="mt-5 pt-3">資訊架構是一門把充滿資訊的空間佈置得井井有條的藝術。</h2>
+              <h5>包含：視覺呈現、搜尋、瀏覽、標幟、分類、排序、操作，以及有策略地隱藏資訊。</h5>
+            </section>
+            <h4 class="shadow-b rounded my-3 text-primary p-2">模式有分成這幾類：</h4>
+
+            <section class="ifm-area">
+              <h4 class="pb-2"><i class="fa fa-angle-right"></i>特寫、搜尋、瀏覽</h4>
+              <span class="badge badge-secondary" style="font-size: 1.2rem;">一篇特寫文章或產品圖片</span>
+              <span class="badge badge-secondary" style="font-size: 1.2rem;">一個搜尋框</span>
+              <span class="badge badge-secondary" style="font-size: 1.2rem;">一份瀏覽的清單</span>
+            </section>
+
+            <section class="ifm-area">
+              <h4 class="pb-2"><i class="fa fa-angle-right"></i>河道新聞</h4>
+              <p>項目清單，由新到舊，呈現出具有高度時效性。最新的項目位於最頂端，能夠動態更新，並把不同的來源或不同人物提供的項目結合到單一串流上。</p>
+            </section>
+
+            <section class="ifm-area">
+              <h4 class="pb-2"><i class="fa fa-angle-right"></i>相簿式管理工具</h4>
+              <p>使用縮圖、項目檢視與瀏覽介面，建立一個管理相片、影片與其他圖像式項目的熟悉結構</p>
+              <p>設置兩種主要檢視：1.縮圖分格-列出清單項目2.單一項目-可放大檢視畫面</p>
+            </section>
+
+            <section class="ifm-area">
+              <h4 class="pb-2"><i class="fa fa-angle-right"></i>儀表板</h4>
+              <p>安排在單一、資訊密集的頁面上，並規律地更新。可讓使用者在需要時自訂呈現畫面。</p>
+              <p>例如：航班資訊、財經資訊、google analytics</p>
+            </section>
+
+            <section class="ifm-area">
+              <h4 class="pb-2"><i class="fa fa-angle-right"></i>畫布附工具盤(例photoshop軟體的使用畫面)</h4>
+              <p>呈現一個大而空白的區域，讓使用者當成畫布使用。工具盤由許多小圖示按鈕依格狀排列而構成，放置在畫面的上方或左側。</p>
+            </section>
+
+            <section class="ifm-area">
+              <h4 class="pb-2"><i class="fa fa-angle-right"></i>精靈</h4>
+              <p>帶領使用者，依據事先定義的任務順序，一步一步走完整個介面。</p>
+            </section>
+
+            <section class="ifm-area">
+              <h4 class="pb-2"><i class="fa fa-angle-right"></i>設定編輯器</h4>
+              <p>提供一個容易尋找、自我說明的頁面或視窗，使用者可在其中改變設定、偏好或屬性。如果需要管理許多設定選項，則把內容畫分成不同的分頁或頁面。</p>
+            </section>
+
+            <section class="ifm-area">
+              <h4 class="pb-2"><i class="fa fa-angle-right"></i>切換檢視(例google map)</h4>
+              <p>使用者在不同檢視模式間選擇，不同的檢視模式在結構上即與預設檢視有相當大的差異，而不只是外表上的不同。</p>
+            </section>
+
+            <section class="ifm-area">
+              <h4 class="pb-2"><i class="fa fa-angle-right"></i>多工作空間</h4>
+              <p>使用多個最頂層的分頁、分頁群組和視窗，讓使用者可以同時檢閱多個網頁、專案、檔案或背景。</p>
+            </section>
+
+            <section class="ifm-area">
+              <h4 class="pb-2"><i class="fa fa-angle-right"></i>多層幫助</h4>
+              <p>混合使用輕量級和重量級的幫助技巧，以支援使用者各式各樣的需求。</p>
+            </section>
+
+          </div>
+        </div>
+      </div>
+      <footer>
+        <a class="refer" href="https://www.books.com.tw/products/0010531034?sloc=main" target="_blank">參考來源書籍：操作介面設計模式</a>
+      </footer>
+      
+      <script src="plugins/jQuery/jquery-3.3.1.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+      <script src="plugins/swiper/swiper.js"></script>
+      <script>
+        //swiper begin
+            var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+            },
+        });
+        //swiper end
+      </script>
+      <script>
+        $(document).ready(function(){
+
+        //hamburger_menu 
+          function slideMenu() {
+            var activeState = $(".nav-menu").hasClass("active");
+            if(activeState=true) {
+              $(".responsive").next().removeClass("active");
+            }
+          }
+
+          $('.responsive').click(function(event) {
+            event.stopPropagation();
+            $('.hamburger_menu').toggleClass("animate");
+            $('.nav-menu').toggleClass("open");
+            slideMenu();
+          });
+        });
+      </script>
+      </body>
+
+</html>
