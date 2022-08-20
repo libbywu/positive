@@ -17,39 +17,7 @@
     <link rel="stylesheet" href="css/books.css">
 
 </head>
-<style>
-      .swiper {
-        width: 100%;
-        height: 500px;
-      }
-      .swiper-slide {
-        text-align: center;
-        font-size: 18px;
-        background: #fff;
 
-        /* Center slide text vertically */
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        -webkit-justify-content: center;
-        justify-content: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        -webkit-align-items: center;
-        align-items: center;
-      }
-
-      .swiper-slide img {
-        display: block;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
-
-</style>
 <body>
       <nav id="main-nav">
         <div class="logo">
@@ -60,12 +28,12 @@
             <div class="hamburger_menu"></div>
         </div>
         <ul class="nav-menu list-unstyled">
-          <li><a href="index.html" class="smoothScroll">關於采羚</a></li>
-          <li><a href="information.html" class="smoothScroll">資訊架構</a></li>
-          <li><a href="signposts.html" class="smoothScroll">導覽路標</a></li>
-          <li><a href="pages.html" class="smoothScroll">頁面元素</a></li>
-          <li><a href="#" class="smoothScroll">清單設計</a></li>
-          <li><a href="#" class="smoothScroll">動作命令</a></li>
+          <li><a href="index.html">關於采羚</a></li>
+          <li><a href="#" class="active">資訊架構</a></li>
+          <li><a href="signposts.html">導覽路標</a></li>
+          <li><a href="pages.html">頁面元素</a></li>
+          <li><a href="#">清單設計</a></li>
+          <li><a href="#">動作命令</a></li>
         </ul>
       </nav>
       <!-- Swiper Carousel begin-->
@@ -82,8 +50,8 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <section>
-              <h2 class="mt-5 pt-3">資訊架構是一門把充滿資訊的空間佈置得井井有條的藝術。</h2>
+            <section class="space-top">
+              <h2>資訊架構是一門把充滿資訊的空間佈置得井井有條的藝術。</h2>
               <h5>包含：視覺呈現、搜尋、瀏覽、標幟、分類、排序、操作，以及有策略地隱藏資訊。</h5>
             </section>
             <h4 class="shadow-b rounded my-3 text-primary p-2">模式有分成這幾類：</h4>
@@ -154,34 +122,34 @@
       <script src="plugins/swiper/swiper.js"></script>
       <script>
         //swiper begin
-            var swiper = new Swiper(".mySwiper", {
-            spaceBetween: 30,
-            pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-            },
-        });
+        var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
         //swiper end
       </script>
+
       <script>
         $(document).ready(function(){
 
-        //hamburger_menu 
-          function slideMenu() {
-            var activeState = $(".nav-menu").hasClass("active");
-            if(activeState=true) {
-              $(".responsive").next().removeClass("active");
-            }
-          }
-
-          $('.responsive').click(function(event) {
-            event.stopPropagation();
-            $('.hamburger_menu').toggleClass("animate");
-            $('.nav-menu').toggleClass("open");
-            slideMenu();
-          });
+        //hamburger_menu
+        $('.responsive').click(function(event) {
+          event.preventDefault();
+          $('.hamburger_menu').toggleClass("animate");
+          $('.nav-menu').toggleClass("open");
         });
+          
+      });
       </script>
+
       </body>
 
 </html>

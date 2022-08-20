@@ -34,12 +34,12 @@
             </div>
     
             <ul class="nav-menu list-unstyled">
-              <li><a href="index.html" class="smoothScroll">關於采羚</a></li>
-              <li><a href="information.html" class="smoothScroll">資訊架構</a></li>
-              <li><a href="#" class="smoothScroll">導覽路標</a></li>
-              <li><a href="pages.html" class="smoothScroll">頁面元素</a></li>
-              <li><a href="#" class="smoothScroll">清單設計</a></li>
-              <li><a href="#" class="smoothScroll">動作命令</a></li>
+              <li><a href="index.html">關於采羚</a></li>
+              <li><a href="information.html">資訊架構</a></li>
+              <li><a href="#" class="active">導覽路標</a></li>
+              <li><a href="pages.html">頁面元素</a></li>
+              <li><a href="#">清單設計</a></li>
+              <li><a href="#">動作命令</a></li>
             </ul>
     
       </nav>
@@ -252,19 +252,12 @@
 
       <script>
         $(document).ready(function(){
-        //hamburger_menu 
-          function slideMenu() {
-            var activeState = $(".nav-menu").hasClass("active");
-            if(activeState=true) {
-              $(".responsive").next().removeClass("active");
-            }
-          }
 
+        //hamburger_menu 
           $('.responsive').click(function(event) {
-            event.stopPropagation();
+            event.preventDefault();
             $('.hamburger_menu').toggleClass("animate");
             $('.nav-menu').toggleClass("open");
-            slideMenu();
           });
         });
       </script>
